@@ -43,8 +43,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe project cards
+// Initialize animations when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
+    // Observe project cards for fade-in animation
     const cards = document.querySelectorAll('.project-card, .viz-card');
     cards.forEach(card => {
         card.style.opacity = '0';
@@ -52,10 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
-});
 
-// Add interactive animation to visualization
-document.addEventListener('DOMContentLoaded', () => {
+    // Add interactive animation to visualization cells
     const cells = document.querySelectorAll('.cell');
     cells.forEach((cell, index) => {
         cell.style.animationDelay = `${index * 0.1}s`;
