@@ -13,6 +13,7 @@
     --light-bg: rgba(255, 255, 255, 0.05);
     --card-bg: rgba(17, 24, 39, 0.8);
     --shadow: 0 10px 40px rgba(0,0,0,0.45);
+    --shadow-color: rgba(0,0,0,0.35);
 }
 
 body {
@@ -256,7 +257,7 @@ section {
 
 .project-link:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(0,0,0,0.35), 0 0 24px var(--accent-color);
+    box-shadow: 0 8px 22px var(--shadow-color), 0 0 24px var(--accent-color);
 }
 
 /* Visualizations */
