@@ -259,7 +259,7 @@ section {
 
 .project-link:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 22px var(--shadow-color), 0 0 24px var(--accent-color);
+    box-shadow: 0 0 18px var(--shadow-color), 0 0 24px var(--accent-color);
 }
 
 /* Visualizations */
