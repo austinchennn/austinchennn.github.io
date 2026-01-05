@@ -251,7 +251,7 @@ section {
     background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
     font-weight: 700;
     letter-spacing: 0.3px;
-    box-shadow: 0 0 18px rgba(88, 101, 242, 0.35);
+    box-shadow: 0 0 18px var(--shadow-color);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
