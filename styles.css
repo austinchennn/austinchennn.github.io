@@ -8,11 +8,14 @@
     --primary-color: #5865f2;
     --secondary-color: #0c1224;
     --accent-color: #00e5ff;
+    --primary-glow: rgba(88, 101, 242, 0.35);
+    --accent-glow: rgba(0, 229, 255, 0.25);
     --text-color: #e5e7ff;
     --muted-color: #9ca3af;
     --light-bg: rgba(255, 255, 255, 0.05);
     --card-bg: rgba(17, 24, 39, 0.8);
     --shadow: 0 10px 40px rgba(0,0,0,0.45);
+    --shadow-color: rgba(0,0,0,0.35);
 }
 
 body {
@@ -155,7 +158,7 @@ nav .container {
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.5px;
-    box-shadow: 0 0 25px rgba(88, 101, 242, 0.35), 0 0 45px rgba(0, 229, 255, 0.25);
+    box-shadow: 0 0 25px var(--primary-glow), 0 0 45px var(--accent-glow);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -238,6 +241,25 @@ section {
     border-radius: 15px;
     font-size: 0.85rem;
     box-shadow: 0 0 14px rgba(88, 101, 242, 0.4);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    box-shadow: 0 0 18px var(--shadow-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px var(--shadow-color), 0 0 24px var(--accent-glow);
 }
 
 /* Visualizations */
