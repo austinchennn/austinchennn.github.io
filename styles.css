@@ -240,6 +240,25 @@ section {
     box-shadow: 0 0 14px rgba(88, 101, 242, 0.4);
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    box-shadow: 0 0 18px rgba(88, 101, 242, 0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.35), 0 0 24px rgba(0, 229, 255, 0.4);
+}
+
 /* Visualizations */
 .visualizations {
     background: transparent;
