@@ -8,6 +8,8 @@
     --primary-color: #5865f2;
     --secondary-color: #0c1224;
     --accent-color: #00e5ff;
+    --primary-glow: rgba(88, 101, 242, 0.35);
+    --accent-glow: rgba(0, 229, 255, 0.25);
     --text-color: #e5e7ff;
     --muted-color: #9ca3af;
     --light-bg: rgba(255, 255, 255, 0.05);
@@ -156,7 +158,7 @@ nav .container {
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.5px;
-    box-shadow: 0 0 25px var(--primary-color), 0 0 45px var(--accent-color);
+    box-shadow: 0 0 25px var(--primary-glow), 0 0 45px var(--accent-glow);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
